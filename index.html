@@ -1,0 +1,348 @@
+<!--This web page is done in HTML 5 & CSS 3 by Zoe Chang in 2014-->
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Space Odyssey</title>
+
+<style type="text/css"> 
+img#planet
+{
+position:relative;
+animation-name:myfirst;
+animation-duration:5s;
+animation-timing-function:ease-out;
+animation-delay:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+position:relative;
+-moz-animation-name:myfirst;
+-moz-animation-duration:5s;
+-moz-animation-timing-function:ease-out;
+-moz-animation-delay:2s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+position:relative;
+-webkit-animation-name:myfirst;
+-webkit-animation-duration:5s;
+-webkit-animation-timing-function:ease-out;
+-webkit-animation-delay:2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+/* Opera: */
+position:relative;
+-o-animation-name:myfirst;
+-o-animation-duration:5s;
+-o-animation-timing-function:ease-out;
+-o-animation-delay:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:alternate;
+-o-animation-play-state:running;
+}
+
+@keyframes myfirst
+{
+0%   {left:0px; top:20px;}
+25%  {left:800px; top:0px;}
+50%  {right:800px; top:400px;}
+75%  {left:0px; bottom:200px;}
+100% {left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+0%   {left:0px; top:20px;}
+25%  {left:800px; top:0px;}
+50%  {right:800px; top:400px;}
+75%  {left:0px; bottom:200px;}
+100% {left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {left:0px; top:20px;}
+25%  {left:800px; top:0px;}
+50%  {right:800px; top:400px;}
+75%  {left:0px; bottom:200px;}
+100% {left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {left:0px; top:20px;}
+25%  {left:800px; top:0px;}
+50%  {right:800px; top:400px;}
+75%  {left:0px; bottom:200px;}
+100% {left:0px; top:0px;}
+}
+
+img#robot
+{
+position:relative;
+animation-name:mysecond;
+animation-duration:10s;
+animation-timing-function:ease-out;
+animation-delay:2s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+position:relative;
+-moz-animation-name:mysecond;
+-moz-animation-duration:10s;
+-moz-animation-timing-function:ease-out;
+-moz-animation-delay:2s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+position:relative;
+-webkit-animation-name:mysecond;
+-webkit-animation-duration:10s;
+-webkit-animation-timing-function:ease-out;
+-webkit-animation-delay:2s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+/* Opera: */
+position:relative;
+-o-animation-name:mysecond;
+-o-animation-duration:10s;
+-o-animation-timing-function:ease-out;
+-o-animation-delay:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:alternate;
+-o-animation-play-state:running;
+}
+
+@keyframes mysecond
+{
+0%   {left:0px; bottom:0;}
+25%  {left:-780px; bottom:40px;}
+50%  {right:-780px; bottom:30px;}
+75%  {right:-680px; bottom:60px;}
+100% {left:-780px; bottom:0;}
+}
+
+@-moz-keyframes mysecond /* Firefox */
+{
+0%   {left:0px; bottom:0;}
+25%  {left:-780px; bottom:40px;}
+50%  {right:-780px; bottom:30px;}
+75%  {right:-680px; bottom:60px;}
+100% {left:-780px; bottom:0;}
+}
+
+@-webkit-keyframes mysecond /* Safari and Chrome */
+{
+0%   {left:0px; bottom:0;}
+25%  {left:-780px; bottom:40px;}
+50%  {right:-780px; bottom:30px;}
+75%  {right:-680px; bottom:60px;}
+100% {left:-780px; bottom:0;}
+}
+
+@-o-keyframes mysecond /* Opera */
+{
+0%   {left:0px; bottom:0;}
+25%  {left:-780px; bottom:40px;}
+50%  {right:-780px; bottom:30px;}
+75%  {right:-680px; bottom:60px;}
+100% {left:-780px; bottom:0;}
+}
+
+img#spaceship
+{
+position:relative;
+animation-name:mythird;
+animation-duration:15s;
+animation-timing-function:ease-out;
+animation-delay:0s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+position:relative;
+-moz-animation-name:mythird;
+-moz-animation-duration:15s;
+-moz-animation-timing-function:ease-out;
+-moz-animation-delay:0s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+position:relative;
+-webkit-animation-name:mythird;
+-webkit-animation-duration:15s;
+-webkit-animation-timing-function:ease-out;
+-webkit-animation-delay:5s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+/* Opera: */
+position:relative;
+-o-animation-name:mythird;
+-o-animation-duration:15s;
+-o-animation-timing-function:ease-out;
+-o-animation-delay:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:alternate;
+-o-animation-play-state:running;
+}
+
+@keyframes mythird
+{
+0%   {left:2000px; bottom:0px;}
+100% {left:-2000px; bottom:0px;}
+}
+
+@-moz-keyframes mythird /* Firefox */
+{
+0%   {left:2000px; bottom:0px;}
+100% {left:-2000px; bottom:0px;}
+}
+
+@-webkit-keyframes mythird /* Safari and Chrome */
+{
+0%   {left:2000px; bottom:0px;}
+100% {left:-2000px; bottom:0px;}
+}
+
+@-o-keyframes mythird /* Opera */
+{
+0%   {left:2000px; bottom:0px;}
+100% {left:-2000px; bottom:0px;}
+}
+
+img#astronaut
+{
+position:relative;
+animation-name:myfourth;
+animation-duration:20s;
+animation-timing-function:ease-out;
+animation-delay:0s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Firefox: */
+position:relative;
+-moz-animation-name:myfourth;
+-moz-animation-duration:20s;
+-moz-animation-timing-function:ease-out;
+-moz-animation-delay:0s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:alternate;
+-moz-animation-play-state:running;
+/* Safari and Chrome: */
+position:relative;
+-webkit-animation-name:myfourth;
+-webkit-animation-duration:20s;
+-webkit-animation-timing-function:ease-out;
+-webkit-animation-delay:5s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+/* Opera: */
+position:relative;
+-o-animation-name:myfourth;
+-o-animation-duration:20s;
+-o-animation-timing-function:ease-out;
+-o-animation-delay:2s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:alternate;
+-o-animation-play-state:running;
+}
+
+@keyframes myfourth
+{
+0%   {top:0px; bottom:0px;}
+100% {top:-1000px; bottom:0px;}
+}
+
+@-moz-keyframes myfourth /* Firefox */
+{
+0%   {top:0px; bottom:0px;}
+100% {top:-1000px; bottom:0px;}
+}
+
+@-webkit-keyframes myfourth /* Safari and Chrome */
+{
+0%   {top:0px; bottom:0px;}
+100% {top:-1000px; bottom:0px;}
+}
+
+@-o-keyframes myfourth /* Opera */
+{
+0%   {top:0px; bottom:0px;}
+100% {top:-1000px; bottom:0px;}
+}
+
+a:link {color:#c27aff;}
+a:visited {color:#c27aff;}
+a:hover {color:#c27aff;}
+a:active {color:#c27aff;}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color:white;
+  font-family:Arial;
+  font-size:18px;
+}
+
+div {
+  padding: 0 50px 50px;
+}
+
+ol {
+  line-height: 2;
+}
+
+table {
+  overflow: hidden;
+  background: url('assets/space.jpg') no-repeat;
+  background-size: 100% auto;
+  background-position: top left;
+  width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td align="left"><img src="assets/planet.gif" id="planet"></td><td></td><td align="right"><img src="assets/spaceship.gif" id="spaceship"></td>
+  </tr>
+    <tr>
+    <td><img src="assets/alien.gif"></td><td><img src="assets/astronaut.gif" id="astronaut"></td><td><img src="assets/robot.gif" id="robot"></td>
+  </tr>
+</table>
+<div>
+  <h1 style="text-align:center; margin-top:100px;">iDo Project - Example: Space Odyssey</h1>
+  <p>In this project, there are mainly 4 key steps / concepts:</p>
+  <ol>
+    <li>Use the template designed by the instructor.</li>
+    <li>Choose a background image found by the instructor and use it as your theme:
+      <a href="assets/space.jpg">Space</a>, <a href="assets/ocean.jpg">Ocean</a>, <a href="assets/farm.jpg">Farm</a>, <a href="assets/town.jpg">Town</a>, <a href="assets/halloween.jpg">Halloween</a>.
+    </li>
+    <li>
+      Change the characters in the template. Minimally 2 characters: Non-animated and animated. Non-animated character can be any one you found on the web. Animated character must be created by you. You can have up to 6 characters in total as maximum.
+    </li>
+    <li>
+      Tweak the codes and customize to your needs. (We will cover the basic HTML 5 and CSS 3 features that are used in the template).
+    </li>
+  </ol>
+  * Materials in this demo are used for fair use / educational purposes.<br><br>
+  Schedules & Instructions: TBD
+  </p>
+  <p>Student Work: <a href="http://zoechangdesign.com/demo/diana/diana.html" target="_blank">Diana</a> <a href="http://zoechangdesign.com/demo/franklin/franklin.html" target="_blank">Franklin</a> <a href="http://zoechangdesign.com/demo/eric/eric.html" target="_blank">Eric</a></p>
+</div>
+</body>
+</html>
